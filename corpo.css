@@ -97,7 +97,7 @@ a {
     }
 
     /* Reseta os botões do menu para ficarem centralizados */
-    .texto1, .texto2, .texto3 {
+    .texto1, .texto2, .texto3, .minha-imagem {
         position: static; /* Remove a posição fixa em pixels */
         display: block;   /* Faz cada botão ocupar sua própria linha */
         width: 80%;       /* Largura boa para tocar com o dedo */
