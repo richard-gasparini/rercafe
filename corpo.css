@@ -116,7 +116,7 @@ h1 a {
     color: white}
 
 
-.pagina-branca {
+.pagina-branca {min-height: 100vh;
     background-color: white;
 
     padding: 80px;
