@@ -62,20 +62,7 @@ a {
     text-decoration: none;
 }
 
-
-.nad h1 {
-    position: static; /* Remove a posição absoluta herdada do h1 global */
-    white-space: nowrap; /* Garante que a frase fique em uma única linha */
-}
-
-.nad {
-    position: absolute;
-    color: white;
-    top: 0px; /* Posição na tela para a frase não ficar em cima do menu */
-    left: 10px;
-    margin: 10px;
-}
-
+/* --- REGRA DA SUA IMAGEM --- */
 .minha-imagem {
     position: absolute;
     top: 480px;     /* Altere este valor para mover para cima ou para baixo */
@@ -85,12 +72,31 @@ a {
     z-index: 10;    /* Força a imagem a ficar NA FRENTE da foto de fundo */
 }
 
+.minha-imagemdois {
+    position: absolute;
+    top: 480px;     /* Altere este valor para mover para cima ou para baixo */
+    left: 110px;    /* Altere este valor para mover para a esquerda ou direita */
+    width: 80px;   /* Ajuste o tamanho da imagem aqui */
+    height: auto;
+    z-index: 10;    /* Força a imagem a ficar NA FRENTE da foto de fundo */
+}
+
+.cafe {
+    position: absolute;
+    top: 210px;     /* Altere este valor para mover para cima ou para baixo */
+    left: 990px;    /* Altere este valor para mover para a esquerda ou direita */
+    width: 180px;   /* Ajuste o tamanho da imagem aqui */
+    height: auto;
+    z-index: 10;    /* Força a imagem a ficar NA FRENTE da foto de fundo */
+}
+
+
 .retangulo-preto {
     position: absolute;
-    top: 170px;         /* Distância do topo */
-    left: 700px;         /* Distância da esquerda */
-    width: 300px;       /* Largura do retângulo */
-    height: 300px;      /* Altura do retângulo */
+    top: 200px;         /* Distância do topo */
+    left: 980px;         /* Distância da esquerda */
+    width: 200px;       /* Largura do retângulo */
+    height: 200px;      /* Altura do retângulo */
     background-color: white; /* Cor preta */
     z-index: 5;         /* Garante que fique acima de alguns elementos e atrás de outros */
 }
@@ -101,7 +107,7 @@ a {
 
     /* Oculta o texto das redes e a imagem do Instagram no celular */
     .redes-sociais,
-    .minha-imagem, .retangulo-preto {
+    .minha-imagem, .minha-imagemdois, .retangulo-preto {
         display: none !important;
     }
 
