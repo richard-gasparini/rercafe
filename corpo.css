@@ -189,3 +189,20 @@ h1 a {
         font-size: 18px;
     }
 }
+
+    .loc-txt {
+        margin: 20px 15px;        /* Reduz a margem para aproveitar a tela do celular */
+    }
+
+    .loc-txt a {
+        flex-direction: column;   /* No celular, coloca o ícone EM CIMA e o texto EMBAIXO */
+        text-align: center;       /* Centraliza o texto do endereço */
+        gap: 10px;
+        font-size: 16px !important; /* Ajusta a fonte para caber confortavelmente */
+        line-height: 1.4;         /* Dá um espaçamento entre as linhas do endereço */
+    }
+
+    #maps {
+        width: 45px;              /* Deixa o ícone do mapa um pouquinho maior no celular */
+    }
+}
