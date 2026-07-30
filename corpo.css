@@ -166,6 +166,10 @@ h1 a {
 @media (max-width: 768px) {
 
     /* Na Home: reorganiza elementos absolutos */
+    body {
+        text-align: center; /* Centraliza conteúdo inline como as imagens das redes */
+    }
+
     h1 {
         position: static;
         text-align: center;
@@ -200,16 +204,12 @@ h1 a {
         margin-top: 30px;
     }
 
-    .minha-imagem {
-        position: static;
-        display: inline-block;
-        margin: 15px 10px 0 0;
-    }
-
+    /* Centraliza os ícones das redes sociais */
+    .minha-imagem, 
     .minha-imagemdois {
         position: static;
         display: inline-block;
-        margin: 15px 0 0 10px;
+        margin: 15px 10px 0 10px; /* Margem igual dos dois lados para centralizar perfeitamente */
     }
 
     /* Na Localização: empurra o conteúdo para o topo da tela */
@@ -227,5 +227,6 @@ h1 a {
     .btn-voltar {
         position: static;
         margin-bottom: 20px;
+        display: inline-block;
     }
 }
