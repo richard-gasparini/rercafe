@@ -76,7 +76,14 @@ a {
     margin: 10px;
 }
 
-
+.minha-imagem {
+    position: absolute;
+    top: 480px;     /* Altere este valor para mover para cima ou para baixo */
+    left: 10px;    /* Altere este valor para mover para a esquerda ou direita */
+    width: 80px;   /* Ajuste o tamanho da imagem aqui */
+    height: auto;
+    z-index: 10;    /* Força a imagem a ficar NA FRENTE da foto de fundo */
+}
 
 
 
