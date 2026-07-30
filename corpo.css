@@ -116,10 +116,7 @@ h1 a {
     color: white}
 
 
-.pagina-branca {min-height: 100vh;
-    background-color: white;
 
-    padding: 80px;
     
 /* REGRAS APENAS PARA CELULAR / TELA PEQUENA */
 @media (max-width: 768px) {
