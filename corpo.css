@@ -115,9 +115,9 @@ h1 a {
     right:  100px;
     color: white}
 
-/* REGRAS MOBILE */
+/* REGRAS APENAS PARA CELULAR / TELA PEQUENA */
 @media (max-width: 768px) {
-    .minha-imagemdois, .retangulo-preto, #cafe, .texto-recado {
+    .minha-imagem, .minha-imagemdois, .retangulo-preto, #cafe, .texto-recado {
         display: none !important;
     }
 
@@ -125,7 +125,19 @@ h1 a {
         position: static;
         flex-direction: column;
         align-items: center;
+        gap: 15px;             /* Espaço entre cada botão no celular */
         margin-top: 20px;
+    }
+
+    /* O fundo marrom entra APENAS AQUI! */
+    .menu a {
+        background-color: #4a2c11 !important; /* Marrom do café */
+        padding: 10px 20px;                   /* Cria a caixinha do botão */
+        border-radius: 8px;                   /* Bordas arredondadas */
+        font-size: 20px !important;            /* Ajusta o tamanho da fonte para o celular */
+        text-align: center;
+        width: 80%;                           /* Faz o botão ocupar quase a largura da tela */
+        display: block;
     }
 
     h1 {
