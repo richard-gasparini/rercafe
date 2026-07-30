@@ -88,7 +88,14 @@ a {
 
 
 /* Regras aplicadas APENAS em telas pequenas (celulares) */
+/* Regras aplicadas APENAS em telas pequenas (celulares) */
 @media (max-width: 768px) {
+
+    /* Oculta o texto das redes e a imagem do Instagram no celular */
+    .redes-sociais,
+    .minha-imagem {
+        display: none !important;
+    }
 
     /* Transforma o fundo para ajustar bem no celular */
     body {
@@ -97,10 +104,10 @@ a {
     }
 
     /* Reseta os botões do menu para ficarem centralizados */
-    .texto1, .texto2, .texto3, .minha-imagem {
-        position: static; /* Remove a posição fixa em pixels */
-        display: block;   /* Faz cada botão ocupar sua própria linha */
-        width: 80%;       /* Largura boa para tocar com o dedo */
+    .texto1, .texto2, .texto3 {
+        position: static;  /* Remove a posição fixa em pixels */
+        display: block;    /* Faz cada botão ocupar sua própria linha */
+        width: 80%;        /* Largura boa para tocar com o dedo */
         margin: 15px auto; /* Centraliza na tela */
         text-align: center;
         font-size: 20px;
