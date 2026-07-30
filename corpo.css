@@ -1,12 +1,14 @@
+/*COLOCO A IMAGEM COM PLANO DE FUNDO*/
 body {
     background-image: url("fotocafe.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100vh; /*o vh significa Viewport Height, ou seja, altura da área visível do navegador.*/
     margin: 0;
 }
 
+/* */
 .cabecalho {
     position: relative;
 }
@@ -116,11 +118,42 @@ h1 a {
     color: white}
 
 
+/*///////////////////////////////////////// PAGINA DE LOCALIZAÇÃ////////////////////////////////////////*/
 
-    
+/* Texto da pagina de localização */
+.loc-txt {position: relative;
+    top: -20px;
+    left: -10px;
+    color: white
+}
+.loc-txt a{
+ color: white !important;
+    text-decoration: none !important;
+    font-size: 15px;
+    font-weight: 400;
+    text-shadow: 1px 8px 4px #000000 !important;
+}
+.loc-txt :hover {
+    text-decoration: underline !important;
+}
+
+/* ICONE do maps*/
+#maps {position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 35px;
+    height: auto;
+    z-index: 10;
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////*/
+
+
+
 /* REGRAS APENAS PARA CELULAR / TELA PEQUENA */
 @media (max-width: 768px) {
-    .minha-imagem, .minha-imagemdois, .retangulo-preto, #cafe, .texto-recado, .texto-redes {
+    .minha-imagem, .minha-imagemdois, .retangulo-preto, #cafe, .texto-recado {
         display: none !important;
     }
 
