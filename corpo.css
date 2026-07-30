@@ -101,7 +101,7 @@ a {
 
     /* Oculta o texto das redes e a imagem do Instagram no celular */
     .redes-sociais,
-    .minha-imagem {
+    .minha-imagem, .retangulo-preto {
         display: none !important;
     }
 
