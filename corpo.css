@@ -1,0 +1,77 @@
+body {
+    background-image: url("fotocafe.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.cabecalho {
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    color: white;
+    top: 30px;
+    left: 130px;
+    margin: 0;
+}
+
+p {
+    position: absolute;
+    color: white;
+    top: 550px;
+    left: 20px;
+    margin: 0;
+    font-size: 24px;
+}
+
+.texto1 {
+    position: absolute;
+    color: white;
+    top: 30px;
+    left: 1010px;
+    font-size: 28px;
+    background-color: #472000;
+    padding: 4px;
+}
+
+.texto2 {
+    position: absolute;
+    color: white;
+    top: 30px;
+    left: 680px;
+    font-size: 28px;
+    background-color: #472000;
+    padding: 4px;
+}
+
+.texto3 {
+    position: absolute;
+    color: white;
+    top: 30px;
+    left: 530px;
+    font-size: 28px;
+    background-color: #472000;
+    padding: 4px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.nad h1 {
+    position: static; /* Remove a posição absoluta herdada do h1 global */
+    white-space: nowrap; /* Garante que a frase fique em uma única linha */
+}
+
+.nad {
+    position: absolute;
+    color: white;
+    top: 20px; /* Posição na tela para a frase não ficar em cima do menu */
+    left: 10px;
+    margin: 10px;
+}
