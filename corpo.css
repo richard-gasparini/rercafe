@@ -115,7 +115,7 @@ h1 a {
 }
 
 /* ==========================================================================
-   4. ESTILOS DA PÁGINA DE LOCALIZAÇÃO
+   4. ESTILOS DA PÁGINA DE LOCALIZAÇÃO (DESKTOP)
    ========================================================================== */
 .pagina-localizacao {
     display: flex;
@@ -189,7 +189,7 @@ h1 a {
         text-align: center;
     }
 
-    /* Esconde polaroide no celular para não cobrir o fundo */
+    /* Esconde polaroide no celular */
     .retangulo-preto, #cafe, .texto-recado {
         display: none !important;
     }
@@ -212,7 +212,12 @@ h1 a {
         margin: 15px 0 0 10px;
     }
 
-    /* Na Localização: empilha ícone e endereço */
+    /* Na Localização: empurra o conteúdo para o topo da tela */
+    .pagina-localizacao {
+        justify-content: flex-start;
+        padding-top: 40px;
+    }
+
     .link-maps {
         flex-direction: column;
         text-align: center;
@@ -221,6 +226,6 @@ h1 a {
 
     .btn-voltar {
         position: static;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 }
