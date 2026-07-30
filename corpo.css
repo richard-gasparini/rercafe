@@ -71,7 +71,7 @@ a {
 .nad {
     position: absolute;
     color: white;
-    top: 20px; /* Posição na tela para a frase não ficar em cima do menu */
+    top: 10px; /* Posição na tela para a frase não ficar em cima do menu */
     left: 10px;
     margin: 10px;
 }
