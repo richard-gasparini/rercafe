@@ -115,6 +115,12 @@ h1 a {
     right:  100px;
     color: white}
 
+
+..pagina-branca {
+    background-color: white;
+
+    padding: 80px;
+    
 /* REGRAS APENAS PARA CELULAR / TELA PEQUENA */
 @media (max-width: 768px) {
     .minha-imagem, .minha-imagemdois, .retangulo-preto, #cafe, .texto-recado {
