@@ -75,3 +75,42 @@ a {
     left: 10px;
     margin: 10px;
 }
+
+
+
+
+
+/* Regras aplicadas APENAS em telas pequenas (celulares) */
+@media (max-width: 768px) {
+
+    /* Transforma o fundo para ajustar bem no celular */
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Reseta os botões do menu para ficarem centralizados */
+    .texto1, .texto2, .texto3 {
+        position: static; /* Remove a posição fixa em pixels */
+        display: block;   /* Faz cada botão ocupar sua própria linha */
+        width: 80%;       /* Largura boa para tocar com o dedo */
+        margin: 15px auto; /* Centraliza na tela */
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /* Ajusta o título principal */
+    h1 {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* Ajusta o subtítulo */
+    p {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+}
