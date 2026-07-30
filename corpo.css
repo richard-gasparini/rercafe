@@ -6,12 +6,13 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; /* Viewport Height: altura da área visível do navegador */
+    min-height: 100vh;
     margin: 0;
+    box-sizing: border-box;
 }
 
 /* ==========================================================================
-   2. CABEÇALHO E MENU DE NAVEGAÇÃO
+   2. CABEÇALHO E MENU (HOME)
    ========================================================================== */
 .cabecalho {
     position: relative;
@@ -53,9 +54,8 @@ h1 a {
 }
 
 /* ==========================================================================
-   3. ELEMENTOS DA PÁGINA INICIAL (HOME)
+   3. ELEMENTOS DA HOME (DESKTOP)
    ========================================================================== */
-/* Texto "NOSSAS REDES" */
 .texto-redes {
     position: absolute;
     color: white;
@@ -66,7 +66,6 @@ h1 a {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-/* Ícones das Redes Sociais */
 .minha-imagem {
     position: absolute;
     top: 500px;
@@ -85,7 +84,6 @@ h1 a {
     z-index: 10;
 }
 
-/* Polaroid e Foto do Café */
 .retangulo-preto {
     position: absolute;
     top: 190px;
@@ -116,23 +114,34 @@ h1 a {
     font-weight: bold;
 }
 
-.nad {
-    position: relative;
-    top: -20px;
-    right: 100px;
-    color: white;
-}
-
 /* ==========================================================================
-   4. PÁGINA DE LOCALIZAÇÃO (DESKTOP)
+   4. ESTILOS DA PÁGINA DE LOCALIZAÇÃO
    ========================================================================== */
-.card-localizacao {
+.pagina-localizacao {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     padding: 20px;
-    box-sizing: border-box;
+}
+
+.btn-voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.card-localizacao {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 90%;
 }
 
 .link-maps {
@@ -141,13 +150,8 @@ h1 a {
     gap: 15px;
     color: white !important;
     text-decoration: none !important;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
-    text-shadow: 2px 2px 6px #000000;
-}
-
-.link-maps:hover {
-    text-decoration: underline !important;
 }
 
 #maps {
@@ -157,19 +161,11 @@ h1 a {
 }
 
 /* ==========================================================================
-   5. REGRAS APENAS PARA CELULAR / TELA PEQUENA (MÓVEL)
+   5. REGRAS EXCLUSIVAS PARA CELULAR (MÓVEL)
    ========================================================================== */
 @media (max-width: 768px) {
-    /* Esconde elementos decorativos do Desktop na tela do Celular */
-    .minha-imagem, 
-    .minha-imagemdois, 
-    .retangulo-preto, 
-    #cafe, 
-    .texto-recado {
-        display: none !important;
-    }
 
-    /* Ajuste do Cabeçalho e do Menu */
+    /* Na Home: reorganiza elementos absolutos */
     h1 {
         position: static;
         text-align: center;
@@ -180,43 +176,51 @@ h1 a {
         position: static;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 10px;
         margin-top: 20px;
     }
 
     .menu a {
-        background-color: #4a2c11 !important;
-        padding: 10px 20px;
-        border-radius: 8px;
         font-size: 20px !important;
-        text-align: center;
+        background-color: rgba(74, 44, 17, 0.9) !important;
+        padding: 10px 20px;
+        border-radius: 6px;
         width: 80%;
-        display: block;
+        text-align: center;
+    }
+
+    /* Esconde polaroide no celular para não cobrir o fundo */
+    .retangulo-preto, #cafe, .texto-recado {
+        display: none !important;
     }
 
     .texto-redes {
         position: static;
         text-align: center;
-        margin-top: 10px;
-        font-size: 18px;
+        margin-top: 30px;
     }
 
-    /* Ajuste da Localização para o Celular */
-    .card-localizacao {
-        padding: 20px;
+    .minha-imagem {
+        position: static;
+        display: inline-block;
+        margin: 15px 10px 0 0;
     }
 
+    .minha-imagemdois {
+        position: static;
+        display: inline-block;
+        margin: 15px 0 0 10px;
+    }
+
+    /* Na Localização: empilha ícone e endereço */
     .link-maps {
         flex-direction: column;
         text-align: center;
-        font-size: 18px;
-        gap: 15px;
-        background-color: rgba(0, 0, 0, 0.6);
-        padding: 20px;
-        border-radius: 12px;
+        font-size: 16px;
     }
 
-    #maps {
-        width: 50px;
+    .btn-voltar {
+        position: static;
+        margin-bottom: 30px;
     }
 }
