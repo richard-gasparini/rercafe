@@ -85,7 +85,15 @@ a {
     z-index: 10;    /* Força a imagem a ficar NA FRENTE da foto de fundo */
 }
 
-
+.retangulo-preto {
+    position: absolute;
+    top: 170px;         /* Distância do topo */
+    left: 700px;         /* Distância da esquerda */
+    width: 300px;       /* Largura do retângulo */
+    height: 300px;      /* Altura do retângulo */
+    background-color: white; /* Cor preta */
+    z-index: 5;         /* Garante que fique acima de alguns elementos e atrás de outros */
+}
 
 /* Regras aplicadas APENAS em telas pequenas (celulares) */
 /* Regras aplicadas APENAS em telas pequenas (celulares) */
