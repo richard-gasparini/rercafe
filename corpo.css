@@ -120,7 +120,7 @@ h1 a {
     
 /* REGRAS APENAS PARA CELULAR / TELA PEQUENA */
 @media (max-width: 768px) {
-    .minha-imagem, .minha-imagemdois, .retangulo-preto, #cafe, .texto-recado {
+    .minha-imagem, .minha-imagemdois, .retangulo-preto, #cafe, .texto-recado, .texto-redes {
         display: none !important;
     }
 
